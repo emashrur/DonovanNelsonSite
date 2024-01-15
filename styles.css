@@ -1,0 +1,16 @@
+body {
+    box-sizing: border-box;
+}
+
+.navigate-bar {
+    display: block;
+    background-color: grey;
+    margin: 0;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+}
