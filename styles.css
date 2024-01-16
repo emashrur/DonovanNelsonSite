@@ -52,14 +52,14 @@ body {
 }
 
 #logo:hover {
-    transform: scale(1.25);
-    opacity: 1;
-    /* background-image: linear-gradient(
+  transform: scale(1.25);
+  opacity: 1;
+  /* background-image: linear-gradient(
     to top,
     rgb(40, 37, 37, 0.5) 0%,
     white 100%
   ); */
-    transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .navbar_menu {
@@ -70,7 +70,7 @@ body {
 }
 
 .item_link {
-    font-family: century-gothic, sans-serif;
+  font-family: century-gothic, sans-serif;
   color: black;
   display: flex;
   align-items: center;
@@ -82,12 +82,32 @@ body {
 }
 
 .item_link:hover {
-    font-size: 110%;
-    opacity: 1;
-    transition: all 0.5s ease;
+  font-size: 110%;
+  opacity: 1;
+  transition: all 0.5s ease;
 }
 
 .about_link {
   font-size: 30px;
   padding-bottom: 40px;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide-show {
+  width: auto;
+  height: 700px;
 }
