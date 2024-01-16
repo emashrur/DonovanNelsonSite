@@ -115,7 +115,7 @@ body {
   display: block;
   width: 30%;
   display: block; /* This ensures that the image is centered within its container */
-  margin: 20px auto; /* Center the image horizontally */
+  margin: 30px auto; /* Center the image horizontally */
 
 }
 
