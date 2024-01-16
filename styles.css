@@ -12,7 +12,7 @@ body {
   background-color: rgb(40, 37, 37, 0.5);
   background-image: linear-gradient(
     to top,
-    rgb(40, 37, 37, 0.5) 0%,
+    rgba(219, 181, 111, 0.5) -20%,
     white 100%
   );
   display: flex;
@@ -21,7 +21,7 @@ body {
   font-size: 1.2rem;
   position: sticky;
   top: 0;
-  margin-top: 20px;
+  margin-top: 10px;
   z-index: 999;
 }
 
@@ -38,6 +38,9 @@ body {
 #logo {
   width: 60px;
   margin-left: 30px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  opacity: 0.6;
   /* border-left: 3px solid black;
   border-right: 3px solid black; */
   background-size: 100%;
@@ -49,7 +52,8 @@ body {
 }
 
 #logo:hover {
-    transform: scale(1.5);
+    transform: scale(1.25);
+    opacity: 1;
     /* background-image: linear-gradient(
     to top,
     rgb(40, 37, 37, 0.5) 0%,
@@ -66,6 +70,7 @@ body {
 }
 
 .item_link {
+    font-family: century-gothic, sans-serif;
   color: black;
   display: flex;
   align-items: center;
@@ -73,11 +78,11 @@ body {
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .item_link:hover {
-    font-size: 120%;
+    font-size: 110%;
     opacity: 1;
     transition: all 0.5s ease;
 }
