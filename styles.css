@@ -85,11 +85,11 @@ body {
 }
 
 .item_link:hover {
-  font-size: 110%;
-  opacity: 1;
+  transform: scale(1.25);
+  opacity: 0.75;
   transition: all 0.6s ease;
-  border-bottom: solid 1px;
-  border-top: solid 1px;
+  border-bottom: solid 0.5px;
+  border-top: solid 0.5px;
 }
 
 .about_link {
