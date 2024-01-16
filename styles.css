@@ -1,11 +1,14 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .navbar {
@@ -108,9 +111,11 @@ body {
 }
 
 .slide-show {
-  width: auto;
-  height: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  height: auto;
+  display: block;
+  width: 30%;
+  display: block; /* This ensures that the image is centered within its container */
+  margin: 20px auto; /* Center the image horizontally */
+
 }
 
