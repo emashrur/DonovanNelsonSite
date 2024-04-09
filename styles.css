@@ -141,9 +141,8 @@ body {
   margin: 30px auto; /* Center the image horizontally */
 }
 
-.about-wrapper {
-  background-image: url("./images/image4.jpg");
-}
+/* .about-wrapper {
+} */
 
 .about-section {
   padding-top: 100px;
@@ -152,28 +151,56 @@ body {
   margin-left: 200px;
   margin-right: 200px;
   font-family: century-gothic, sans-serif;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .about-header {
-  color: aliceblue;
+  color: #555;
   font-size: 24px;
   font-weight: lighter;
   margin-bottom: 20px;
 }
 
-.bio_text {
+.resume_header {
+  color: #555;
+  font-size: 24px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.about_text {
   border-top: solid 1px;
   border-bottom: solid 1px;
-  color: aliceblue;
+  color: #555;
 }
 
 .biography_paragraph {
   line-height: 1.65;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.cv {
-  margin-left: auto;
-  margin-right: auto;
+.resume_paragraph {
+  line-height: 1.65;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.resume_text {
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  margin-bottom: 10px;
+}
+
+.exhibitions_wrapper {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-style: none none dotted;
 }
