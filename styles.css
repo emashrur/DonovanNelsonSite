@@ -70,6 +70,7 @@ body {
   color: black;
   font-family: century-gothic, sans-serif;
   opacity: 0.6;
+  font-size: 30px;
 }
 
 .home_link:hover {
@@ -93,6 +94,7 @@ body {
 .item_link {
   font-family: century-gothic, sans-serif;
   /* font-family: "Times New Roman", Times, serif; */
+  font-size: 16px;
   color: black;
   display: flex;
   align-items: center;
@@ -141,8 +143,9 @@ body {
   margin: 30px auto; /* Center the image horizontally */
 }
 
-/* .about-wrapper {
-} */
+.about-wrapper {
+  background-image: url("./images/image4.jpg");
+}
 
 .about-section {
   padding-top: 100px;
@@ -151,6 +154,7 @@ body {
   margin-left: 200px;
   margin-right: 200px;
   font-family: century-gothic, sans-serif;
+  background-color: aliceblue;
 }
 
 .about-header {
@@ -168,9 +172,10 @@ body {
 }
 
 .about_text {
-  border-top: solid 1px;
-  border-bottom: solid 1px;
+  /* border-bottom: solid 1px; */
   color: #555;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .biography_paragraph {
@@ -187,7 +192,6 @@ body {
 
 .resume_text {
   margin: 0 auto;
-  padding-top: 30px;
 }
 
 ul {
@@ -198,9 +202,48 @@ ul li {
   margin-bottom: 10px;
 }
 
-.exhibitions_wrapper {
+.list_item_wrapper {
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
-  border-style: none none dotted;
+  border-style: none none dashed;
+  border-color: #979797;
+  border-width: 1px;
+}
+
+.sub_header {
+  color: #555;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.collection_list {
+  margin-left: 30px;
+}
+
+.collection-wrapper {
+  display: flex;
+}
+
+/* .contact_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.contact_header {
+  color: #555;
+  font-size: 24px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.contact_info {
+  text-align: right;
+  line-height: 1.65;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
