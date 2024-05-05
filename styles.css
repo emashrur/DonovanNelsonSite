@@ -8,6 +8,7 @@ body {
   /* align-items: center;
   justify-content: center; */
   height: 100vh;
+  background-color: aliceblue;
 }
 
 .navbar {
@@ -17,7 +18,7 @@ body {
     rgba(219, 181, 111, 0.5) -20%,
     white 100%
   );
-  display: flex;
+  display: sticky;
   justify-content: center;
   align-items: center;
   font-size: 19px;
@@ -25,6 +26,7 @@ body {
   top: 0;
   padding-top: 10px;
   z-index: 999;
+  width: 100%;
 }
 
 .navbar_container {
@@ -68,7 +70,8 @@ body {
   align-items: center;
   text-decoration: none;
   color: black;
-  font-family: century-gothic, sans-serif;
+  /* font-family: century-gothic, sans-serif; */
+  font-family: serif;
   opacity: 0.6;
   font-size: 30px;
 }
@@ -145,6 +148,9 @@ body {
 
 .about-wrapper {
   background-image: url("./images/image4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .about-section {
@@ -235,14 +241,15 @@ ul li {
 
 .contact_header {
   color: #555;
-  font-size: 24px;
+  font-size: 34px;
   font-weight: lighter;
   margin-bottom: 20px;
-  text-align: right;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .contact_info {
-  text-align: right;
+  text-align: center;
   line-height: 1.65;
   margin-top: 20px;
   margin-bottom: 20px;
