@@ -248,9 +248,26 @@ ul li {
   text-align: center;
 }
 
+.contact-container {
+  width: 80%;
+  margin: 50px auto;
+}
+
 .contact_box {
-  text-align: center;
+  display: flex;
+
+  /* text-align: center;
   line-height: 1.65;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; */
+}
+
+.contact_left {
+  flex-basis: 60%;
+  padding: 40px 60px;
+}
+
+.contact_right {
+  flex-basis: 40%;
+  padding: 40px;
 }
