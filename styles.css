@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -298,4 +299,49 @@ ul li {
 .contact_right {
   flex-basis: 40%;
   padding: 40px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+  /* font-family: "Poppins", sans-serif; */
+}
+
+.gallery-heading {
+  width: 50%;
+  padding-bottom: 50px;
+}
+
+.gallery-heading h3 {
+  font-size: 3em;
+  font-weight: 100;
+  color: #4d4d4d;
+  border-bottom: 3px solid #4d4d4d;
+}
+
+.gallery-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gallery-column {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.gallery-column img {
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+.gallery-column img:hover {
+  transform: scale(1.05);
+  transition: all 0.8s ease;
 }
