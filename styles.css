@@ -117,6 +117,19 @@ body {
   border-top: solid 0.5px; */
 }
 
+.artstyle_selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  /* font-family: century-gothic, sans-serif; */
+  font-family: serif;
+  opacity: 0.6;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
 .about_link {
   font-size: 30px;
   padding-bottom: 40px;
@@ -254,7 +267,7 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .contact-inputs {
