@@ -37,11 +37,9 @@ body {
     rgba(0, 0, 0, 0.5) -50%,
     aliceblue 100%
   );
-  display: sticky;
   justify-content: center;
   align-items: center;
   font-size: 19px;
-  position: sticky;
   top: 0;
   padding-top: 10px;
   z-index: 999;
@@ -479,7 +477,7 @@ ul li {
 .gallery-controls-previous::before {
   border: solid #000;
   border-width: 0 5px 5px 0;
-  content: '';
+  content: "";
   display: inline-block;
   height: 5px;
   left: -30px;
@@ -495,32 +493,34 @@ ul li {
   left: -40px;
 }
 
-.gallery-controls-next{
+.gallery-controls-next {
   position: relative;
 }
 .gallery-controls-next::before {
-  border: solid
-  #000;
+  border: solid #000;
   border-width: 0 5px 5px 0;
-  content: '';
+  content: "";
   display: inline-block;
   height: 5px;
   padding: 10px;
   position: absolute;
   right: -30px;
   top: 45;
-  transform:
-  rotate(-45deg) translateY(-50%);
-  transition: right 0.15s ease-in-out; width: 5px;
+  transform: rotate(-45deg) translateY(-50%);
+  transition: right 0.15s ease-in-out;
+  width: 5px;
 }
 
-.gallery-controls-next:hover:before{
+.gallery-controls-next:hover:before {
   right: -40px;
 }
 
-.gallery-nav{
+.gallery-nav {
   bottom: -15px;
-  display: flex; justify-content: center; list-style: none; padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
   position: absolute;
   width: 100%;
 }
