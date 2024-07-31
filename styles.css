@@ -151,6 +151,33 @@ body {
   padding-bottom: 40px;
 }
 
+@media screen and (max-width: 960px) {
+  .navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 1300px;
+    padding: 0;
+  }
+
+  .navbar_menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 0;
+    transition: all 0.5 ease;
+    height: 50vh;
+    z-index: -1;
+  }
+
+
+
+}
+
 .carousel {
   width: 100%;
   overflow: hidden;
