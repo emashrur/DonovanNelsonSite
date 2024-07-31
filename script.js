@@ -48,4 +48,34 @@ class Carousel {
     });
   }
 
+  setCurrentState(directon) {
+    if(direction.className == 'gallery-controls-previous') {
+      this.carouselArray.unshift(this.carouselArray.pop());
+    } else {
+      this.carouselArray.push(this.carouselArray.shift());
+    }
+    this.updateGallery();
+  }
+
+  setControls() {
+    this.carouselControls.forEach(control => {
+      galleryControlsContainer.appendChild(document.createElement('button')).className = `gallery-controls-${control}`;
+      document.querySelector(`gallery-controls-${control}`).innerText = control;
+    });
+  }
+
+  useControls() {
+    const triggers = [...galleryControlsContainer.childNodes];
+    triggers.forReach(control => {
+      control.addEventListener('click', e => {
+        e.preventDefault();
+        this.setCurrentState(control);
+      });
+    });
+  }
 }
+
+const exampleCarousel = new Carousel(galleryCOntainer, galleryItems, galleryControls);
+
+exampleCarousel.setControls();
+exampleCarousel.useControls();
