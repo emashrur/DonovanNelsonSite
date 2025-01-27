@@ -48,7 +48,7 @@ class Carousel {
     });
   }
 
-  setCurrentState(directon) {
+  setCurrentState(direction) {
     if(direction.className == 'gallery-controls-previous') {
       this.carouselArray.unshift(this.carouselArray.pop());
     } else {
