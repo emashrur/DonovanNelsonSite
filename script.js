@@ -6,6 +6,73 @@ const galleryControlsContainer = document.querySelector('.gallery-controls');
 const galleryControls = ['previous', 'next'];
 const galleryItems = document.querySelectorAll('.gallery-item');
 
+const images = [
+  "images/Portraits/Otto Neals 40x30 Oil.JPG",
+  "images/Portraits/Frank Wimerley.JPG",
+  "images/Portraits/Bishop Hunter 36 x48 oil 2005.jpg",
+  "images/Portraits/Nicole  40x30 Oil 2003.JPG",
+  "images/Portraits/Student (6).JPG",
+  "images/Portraits/Student (11).JPG",
+  "images/Portraits/Student (8).JPG",
+  "images/Portraits/Mrs. Grace Ingleton 30x40 oil 2003.JPG",
+  "images/Portraits/Michael Valentine 18x24 oil 2005.jpg",
+  "images/Portraits/Artist Self-portrait Oil 40x30 2020.JPG",
+  "images/Portraits/Mathew 16 x 20 oil 2005.jpg",
+  "images/Portraits/Student (1).JPG",
+  "images/Portraits/Student (9).JPG",
+  "images/Portraits/Valerie 40x30 oil 2003.JPG",
+  "images/Portraits/Rev. Floyd Flake 52 x36 oil 2005.jpg",
+  "images/Portraits/Audrey Anastasi.JPG",
+  "images/Portraits/Student (3).JPG",
+  "images/Portraits/Student (10).JPG",
+  "images/Portraits/Student (7).JPG",
+  "images/Portraits/Student (4).JPG",
+  "images/Paintings/Dancer in Green         48x62 Oil        2005.jpg",
+  "images/Paintings/Yellow Feathers 20x24in Oil.jpg",
+  "images/Paintings/Catching Water 24x30 Oil.jpg",
+  "images/Paintings/Graduation 48x30 oil 2005.JPG",
+  "images/Paintings/The Scream          48X62 Oil        2005.jpg",
+  "images/Paintings/Painting of two dancing.jpg",
+  "images/Paintings/washing          24x30 Oil.jpg",
+  "images/Paintings/Violin Player 36X48 Oil.jpg",
+  "images/Paintings/Dancer in Orange          48x60 Oil     2005.jpg",
+  "images/Paintings/Angelle        36x52 Oil - Copy.jpg",
+  "images/Paintings/Mother with Child 30x40 Oil (1).jpg",
+  "images/IboLanding/Ibo Landing charcoal 54x52 2017.JPG",
+  "images/IboLanding/Ibo Landing charcoal 54x52 2020.JPG",
+  "images/IboLanding/Ibo Landing 13 charcoal 2020.JPG",
+  "images/IboLanding/Ibo Landing 18 54x52 Charcoal 2017.JPG",
+  "images/IboLanding/Ibo Landing 2 Charcoal 54x52 2010.jpg",
+  "images/IboLanding/Ibo Landing 20 charcoal 2017.JPG",
+  "images/IboLanding/Ibo Landing 3 Charcoal 54x52 2010.jpg",
+  "images/IboLanding/Ibo landing 6 charcoal 54x52.JPG",
+  "images/IboLanding/Ibo landing 7 charcoal on paper  54x52 2010.jpg",
+  "images/IboLanding/Ibo landing 8 charcoal 54x52 2010.JPG",
+  "images/Abstract/Protester 10 acrylic 13x17 2013.jpg",
+  "images/Abstract/Protester 11 13x17 acrylic 2013.jpg",
+  "images/Abstract/woman with blue glasses 17x13 acrylic 2013.jpg",
+  "images/Abstract/Marcus Garvy Acrylic 13x17 2013.jpg",
+  "images/Abstract/Paul Robson 17x13 Acrylic 2013.jpg",
+  "images/Abstract/AVASLENOVO-PC - IMAG5345.jpg",
+  "images/Abstract/New birth 7 17x13 Acrylic 2013.jpg",
+  "images/Abstract/New birth 24 17x13 Acrylic 2013 (1).jpg"
+]
+
+const imgElement = document.getElementById("randomImage");
+
+function showRandomImage() {
+  const randomIndex = Math.floor(Math.random() * images.length);
+  imgElement.style.opacity = 0;
+  setTimeout(() => {
+    imgElement.src = images[randomIndex];
+    imgElement.style.opacity = 1;
+  }, 500);
+}
+
+showRandomImage();  
+
+setInterval(showRandomImage, 5000);
+
 function showNextSlide() {
   if (currentIndex < totalItems - 1) {
     currentIndex++;
