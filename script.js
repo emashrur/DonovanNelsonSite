@@ -58,25 +58,28 @@ const images = [
   "images/Abstract/New birth 24 17x13 Acrylic 2013 (1).jpg"
 ]
 
-const imgElement = document.getElementById("randomImage");
+const revolvingItems = document.querySelectorAll('.slider .item img');
 
-function showRandomImage() {
-  const randomIndex = Math.floor(Math.random() * images.length);
-  imgElement.style.opacity = 0;
-  setTimeout(() => {
-    imgElement.src = images[randomIndex];
-    imgElement.style.opacity = 1;
-  }, 500);
+// Helper to get N unique random images
+function getUniqueRandomImages(count) {
+  const shuffled = [...images].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
 }
 
-showRandomImage();  
+function updateCarouselImages() {
+  const newImages = getUniqueRandomImages(revolvingItems.length);
+  revolvingItems.forEach((img, i) => {
+    img.src = newImages[i];
+  });
+}
 
-setInterval(showRandomImage, 5000);
+// Update every 10 seconds (or whatever you want)
+setInterval(updateCarouselImages, 5000);
 
 function showNextSlide() {
   if (currentIndex < totalItems - 1) {
     currentIndex++;
-  } else {
+  } else {``
     currentIndex = 0;
   }
   updateCarousel();
