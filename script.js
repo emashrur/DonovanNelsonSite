@@ -58,23 +58,33 @@ const images = [
   "images/Abstract/New birth 24 17x13 Acrylic 2013 (1).jpg"
 ]
 
-const revolvingItems = document.querySelectorAll('.slider .item img');
+// const revolvingItems = document.querySelectorAll('.slider .item img');
 
-// Helper to get N unique random images
-function getUniqueRandomImages(count) {
-  const shuffled = [...images].sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, count);
-}
+// // Helper to get N unique random images
+// function getUniqueRandomImages(count) {
+//   const shuffled = [...images].sort(() => 0.5 - Math.random());
+//   return shuffled.slice(0, count);
+// }
 
-function updateCarouselImages() {
-  const newImages = getUniqueRandomImages(revolvingItems.length);
-  revolvingItems.forEach((img, i) => {
-    img.src = newImages[i];
-  });
-}
+// function updateCarouselImages() {
+//   const newImages = getUniqueRandomImages(revolvingItems.length);
+//   revolvingItems.forEach((img, i) => {
+//     img.src = newImages[i];
+//   });
+// }
 
-// Update every 10 seconds (or whatever you want)
-setInterval(updateCarouselImages, 5000);
+// // Update every 10 seconds (or whatever you want)
+// setInterval(updateCarouselImages, 5000);
+
+const rotatingItems = document.querySelectorAll(".rotating-img");
+
+const shuffledImages = [...images].sort(() => Math.random() - 0.5);
+
+rotatingItems.forEach((img, index) => {
+  img.src = shuffledImages[index % shuffledImages.length];
+});
+
+
 
 function showNextSlide() {
   if (currentIndex < totalItems - 1) {
